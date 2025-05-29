@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Dessert Sales Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#feca57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M8 3v18M16 3v18M3 8h18M3 16h18"></path>
+                </svg>
+                <h2>Sweet Dashboard</h2>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#" class="active">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        Customers
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                        Orders
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        Staff
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                        Inventory
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="main-content">
+            <div class="header">
+                <h1>Dessert Sales Dashboard</h1>
+                <div class="date-picker">
+                    <select id="period-select">
+                        <option value="day">Today</option>
+                        <option value="week" selected>This Week</option>
+                        <option value="month">This Month</option>
+                        <option value="year">This Year</option>
+                    </select>
+                    <input type="date" id="start-date">
+                    <input type="date" id="end-date">
+                    <button id="apply-date">Apply</button>
+                </div>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Sales</h3>
+                    <div class="value">Rp 12,540,000</div>
+                    <div class="trend up">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                        12.5% from last week
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <h3>Orders</h3>
+                    <div class="value">348</div>
+                    <div class="trend up">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                        8.2% from last week
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <h3>Average Order Value</h3>
+                    <div class="value">Rp 36,034</div>
+                    <div class="trend up">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                        4.3% from last week
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <h3>Customers</h3>
+                    <div class="value">256</div>
+                    <div class="trend down">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        2.1% from last week
+                    </div>
+                </div>
+            </div>
+            
+            <div class="charts-container">
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>Sales Performance</h3>
+                        <div class="chart-filters">
+                            <select id="chart-type">
+                                <option value="daily">Daily</option>
+                                <option value="weekly" selected>Weekly</option>
+                                <option value="monthly">Monthly</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="chart-area">
+                        <canvas id="sales-chart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3>Product Categories</h3>
+                    </div>
+                    <div class="chart-area">
+                        <canvas id="category-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recent-sales">
+                <h3>Recent Orders</h3>
+                <table class="sales-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Product</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#ORD-7652</td>
+                            <td>Ahmad Zaki</td>
+                            <td>Red Velvet Cake</td>
+                            <td>Rp 250,000</td>
+                            <td>May 5, 2025</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>#ORD-7651</td>
+                            <td>Siti Rahayu</td>
+                            <td>Assorted Cookies (24pcs)</td>
+                            <td>Rp 120,000</td>
+                            <td>May 5, 2025</td>
+                            <td><span class="status processing">Processing</span></td>
+                        </tr>
+                        <tr>
+                            <td>#ORD-7650</td>
+                            <td>Budi Santoso</td>
+                            <td>Ice Cream Party Pack</td>
+                            <td>Rp 175,000</td>
+                            <td>May 5, 2025</td>
+                            <td><span class="status processing">Processing</span></td>
+                        </tr>
+                        <tr>
+                            <td>#ORD-7649</td>
+                            <td>Dewi Lestari</td>
+                            <td>Chocolate Lava Cake</td>
+                            <td>Rp 85,000</td>
+                            <td>May 5, 2025</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>#ORD-7648</td>
+                            <td>Eko Prasetyo</td>
+                            <td>Birthday Cake Special</td>
+                            <td>Rp 350,000</td>
+                            <td>May 4, 2025</td>
+                            <td><span class="status cancelled">Cancelled</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="products-section">
+                <h2>Top Products</h2>
+                <div class="product-categories">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="cake">Cakes</button>
+                    <button class="category-btn" data-category="ice-cream">Ice Cream</button>
+                    <button class="category-btn" data-category="cookies">Cookies</button>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card" data-category="cake">
+                        <div class="product-img">
+                            <img src="/dashboard/Red Velvet Strawberry Cheesecake ❤️🍰🍓….jpg" alt="Red Velvet Cake">
+                        </div>
+                        <div class="product-info">
+                            <h4>Red Velvet Cake</h4>
+                            <div class="price">Rp 83,000</div>
+                            <div class="product-stats">
+                                <span>152 sold this month</span>
+                                <span>★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="ice-cream">
+                        <div class="product-img-ice">
+                            <img src="/dashboard/ZOZ92eQM.jpg" alt="Premium Vanilla Ice Cream">
+                        </div>
+                        <div class="product-info">
+                            <h4>Premium Vanilla Ice Cream</h4>
+                            <div class="price">Rp 65,000</div>
+                            <div class="product-stats">
+                                <span>128 sold this month</span>
+                                <span>★★★★☆</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="cookies">
+                        <div class="product-img-cookies">
+                            <img src="/dashboard/Gluten-Free Chocolate Chip Cookies (5-Star….jpg" alt="Chocolate Chip Cookies">
+                        </div>
+                        <div class="product-info">
+                            <h4>Chocolate Chip Cookies (24pcs)</h4>
+                            <div class="price">Rp 360,000</div>
+                            <div class="product-stats">
+                                <span>98 sold this month</span>
+                                <span>★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="cake">
+                        <div class="product-img-tiramisu">
+                            <img src="/dashboard/Rhiqh5cc.jpg" alt="Tiramisu Cake">
+                        </div>
+                        <div class="product-info">
+                            <h4>Tiramisu Cake</h4>
+                            <div class="price">Rp 106,000</div>
+                            <div class="product-stats">
+                                <span>87 sold this month</span>
+                                <span>★★★★☆</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="cake">
+                        <div class="product-img-macaron">
+                            <img src="/dashboard/AtlQc2KU.jpg" alt="Macaron Cake">
+                        </div>
+                        <div class="product-info">
+                            <h4>Macaron Cake (13pcs)</h4>
+                            <div class="price">Rp 104,000</div>
+                            <div class="product-stats">
+                                <span>87 sold this month</span>
+                                <span>★★★★☆</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

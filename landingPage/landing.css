@@ -1,0 +1,402 @@
+body {
+    font-family: "Tagesschrift", system-ui;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-image: url('Bahan dan Cara membuat Strawberry Dessert Box….jpg');
+    background-position-y: 32%;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Bayangan untuk header */
+}
+
+.button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #e6b64f;
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e2e2e;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.menu-tengah {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex: 1;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav .keranjang {
+    margin-left: auto;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #e6b64f;
+    border-radius: 5px; 
+}
+
+.about h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about p{
+    margin-bottom: 0;
+    flex: 1;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.about-content p{
+    margin: 10px 20px;
+    gap: 100px;
+    flex: 1;
+}
+
+.about-content img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.sidebar{
+    background-color: #2d3436;
+    display: flex;
+    flex-direction: row;
+    min-height: 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+#catalog h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.product {
+    background-image: url('DthdSBqq.jpg');
+    background-position-x: 30%;
+    background-position-y: 30%;
+    background-size: 230px 350px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    background-color: white; /* Latar belakang produk */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk produk */
+    transition: transform 0.2s; /* Transisi saat hover */
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.Vanilla {
+    background-image: url('Cone of vanilla ice cream melting and dripping, on….jpg');
+    background-position-x: 30%;
+    background-position-y: 30%;
+    background-size: 230px 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    background-color: white; /* Latar belakang produk */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk produk */
+    transition: transform 0.2s; /* Transisi saat hover */
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.coklat {
+    background-image: url('7CFLNzDJ.jpg');
+    background-position-x: 30%;
+    background-position-y: 30%;
+    background-size: 230px 250px ;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    background-color: white; /* Latar belakang produk */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk produk */
+    transition: transform 0.2s; /* Transisi saat hover */
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.puding {
+    background-image: url('ORVDR9JU.jpg');
+    background-position-x: 30%;
+    background-position-y: 30%;
+    background-size: 230px 350px ;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    background-color: white; /* Latar belakang produk */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk produk */
+    transition: transform 0.2s; /* Transisi saat hover */
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.product:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.Vanilla:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.coklat:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.puding:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+/* Style for the content container */
+.content-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 2; /* Higher z-index to be on top */
+    opacity: 0.85; /* Adjust transparency to let text show through */
+    transition: opacity 0.3s ease;
+}
+
+/* Image backgrounds for each product */
+.product .image-overlay {
+    background-image: url('DthdSBqq.jpg');
+}
+
+.Vanilla .image-overlay {
+    background-image: url('Cone of vanilla ice cream melting and dripping, on….jpg');
+}
+
+.coklat .image-overlay {
+    background-image: url('7CFLNzDJ.jpg');
+}
+
+.puding .image-overlay {
+    background-image: url('ORVDR9JU.jpg');
+}
+
+/* Make text larger and bolder to be more visible */
+.product h3, .Vanilla h3, .coklat h3, .puding h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.product p, .Vanilla p, .coklat p, .puding p {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 30px 0;
+    color: #000;
+}
+
+/* Hover effect to see text better */
+.product:hover .image-overlay,
+.Vanilla:hover .image-overlay,
+.coklat:hover .image-overlay,
+.puding:hover .image-overlay {
+    opacity: 0.3; /* More transparent on hover to reveal text */
+}
+
+/* Button styling */
+.product button, .Vanilla button, .coklat button, .puding button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #f8d24b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    z-index: 1; /* Place button on top so it's always clickable */
+    position: relative;
+}
+
+.cart {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+#commentSection h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.komen-card{
+    background-color: white;
+    padding: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    border-radius: 5px;
+    height: auto;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-section{
+    background-color: #2d3436;
+}
+
+.comment-section h3{
+    color: white;
+}
+
+.komen{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12%;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.komen-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+}
+
+/* Make text styling consistent */
+.komen-card h3 {
+    margin: 10px 0;
+}
+
+.komen-card p {
+    flex-grow: 1; /* This makes the text area expand to fill available space */
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.kolom-komen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#commentInput{
+    width: 50%;
+    padding: 1px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.article {
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.card h2 {
+    margin: 0;
+    color: #663300;
+}
+.card p {
+    margin: 5px 0;
+    color: #555;
+}
+.card a {
+    color: #ff6600;
+    text-decoration: none;
+}
+.card a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Bayangan untuk footer */
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Detail Produk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="judul-produk">Detail Produk</h1>
+  <p id="deskripsi"></p>
+
+  <script>
+    // Data produk simulasi
+    const produkData = {
+      1: {
+        nama: "Cheese Roll",
+        deskripsi: "Roti lembut isi keju meleleh, cocok untuk semua kalangan."
+      },
+      2: {
+        nama: "Kebab Spesial",
+        deskripsi: "Kebab isi daging sapi premium dan sayuran segar."
+      }
+    };
+
+    // Ambil ID produk dari URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+
+    // Tampilkan detail produk jika ID valid
+    if (produkData[id]) {
+      document.getElementById("judul-produk").textContent = produkData[id].nama;
+      document.getElementById("deskripsi").textContent = produkData[id].deskripsi;
+    } else {
+      document.getElementById("judul-produk").textContent = "Produk tidak ditemukan";
+    }
+  </script>
+</body>
+</html>

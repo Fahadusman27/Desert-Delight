@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&family=Londrina+Sketch&family=Tagesschrift&display=swap" rel="stylesheet">
+    <title>Desert Delight</title>
+</head>
+<body>
+    <header>
+        <h1>Desert Delight</h1>
+        <p>Your favorite place for delicious desserts!</p>
+        <a href="#products" class="button">Lihat Menu</a>
+    </header>
+    <nav>
+        <div class="menu-tengah">
+            <a href="#about">About</a>
+            <a href="#catalog">Catalog</a>
+            <a href="#comments">Testimonial</a>
+            <a href="/arsip artikel/arsip.html">Artikel</a>
+        </div>
+        <a class="keranjang" href="/keranjang/keranjang.html"><i class="bi bi-cart-plus"></i></a>
+    </nav>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+        <p>About Us – Desert Delight
+
+            Selamat datang di Desert Delight, destinasi terbaik untuk memuaskan hasrat manis Anda! Kami adalah toko kue dan hidangan penutup yang menyajikan beragam kreasi lezat, mulai dari kue-kue lembut, es krim creamy, cookies renyah, hingga puding yang menyegarkan.  
+            
+            Di Desert Delight, kami percaya bahwa setiap gigitan seharusnya membawa kebahagiaan. Itulah mengapa kami hanya menggunakan bahan-bahan berkualitas tinggi dan resep istimewa untuk menciptakan hidangan penutup yang tak terlupakan. Setiap produk kami dibuat dengan penuh cinta dan perhatian terhadap detail, sehingga Anda dan orang tersayang bisa menikmati momen spesial bersama.  
+            
+            Tim kami terdiri dari para ahli pastry dan koki berpengalaman yang selalu berinovasi untuk menghadirkan rasa-rasa baru yang unik dan menggoda selera. Mulai dari klasik favorit hingga kreasi modern, Desert Delight siap menemani setiap acara Anda, mulai dari perayaan ulang tahun, acara keluarga, hingga sekadar me-time yang manis.  
+            
+            Terima kasih telah memilih Desert Delight sebagai teman setia dalam menikmati hidangan penutup. Mari jelajahi dunia rasa kami dan ciptakan kenangan manis bersama!  
+            
+            💖 Desert Delight – Where Every Bite Brings Joy! 💖</p>
+        <div class="about-image">
+            <img src="v2.jpg" alt="Desert Delight">
+        </div>
+        </div>
+    </section>
+    <section id="catalog">
+        <h2>Menu Desert</h2>
+        <div class="catalog">
+            <div class="product">
+                <div class="content-container">
+                    <h3>Cake</h3>
+                    <a href="/produk/cake/cake.html">
+                        <button onclick="addToCart('ChocolateCake')">Go to Cart</button>
+                    </a>
+                </div>
+                <div class="image-overlay"></div>
+            </div>
+
+            <div class="Vanilla">
+                <div class="content-container">
+                    <h3>Ice Cream</h3>
+                    <a href="">
+                    <button onclick="addToCart('VanillaIceCream')">Go to Cart</button>
+                    </a>
+                </div>
+                <div class="image-overlay"></div>
+            </div>
+
+            <div class="coklat">
+                <div class="content-container">
+                    <h3>Chip Cookies</h3>
+                    <a href="">
+                    <button onclick="addToCart('Chocolate Chip Cookies')">Go to Cart</button>
+                    </a>
+                </div>
+                <div class="image-overlay"></div>
+            </div>
+
+            <div class="puding">
+                <div class="content-container">
+                    <h3>Pudding</h3>
+                    <a href="/produk/puding/puding.html">
+                        <button onclick="addToCart('Pudding')">Go to Cart</button>
+                    </a>
+                </div>
+                <div class="image-overlay"></div>
+            </div>
+        </div>
+    </section>
+    <section id="comments" class="comment-section">
+        <div id="commentSection">
+            <h3>Testimonial</h3>
+            <ul id="commentsList"></ul>
+        </div>
+        <div class="komen">
+            <div class="komen-card">
+                <img src="Untitled.jpg" alt="Cake">
+                <h3>Rina Nose</h3>
+                <p>"Aromanya saja sudah bikin tergoda, apalagi rasanya.
+                     Cookies-nya lembut dengan potongan coklat yang melimpah. Cocok banget untuk teman ngopi atau camilan sore hari!"</p>
+            </div>
+            <div class="komen-card">
+                <img src="Untitled copy.jpg" alt="Cake">
+                <h3>Sinta</h3>
+                <p>"Chocolate Cake-nya lembut banget! Cokelatnya terasa rich dan lumer di mulut. Pasti bakal order lagi!"</p>
+            </div>
+            <div class="komen-card">
+                <img src="parto.jpg" alt="Cake">
+                <h3>Parto</h3>
+                <p>"Vanilla ice cream-nya benar-benar lezat! Teksturnya lembut dan creamy, dengan rasa vanila yang alami dan tidak terlalu manis. Sangat memuaskan!"</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Desert Delight. All rights reserved.</p>
+    </footer>
+    <script src="landing.js"></script>
+</body>
+</html>

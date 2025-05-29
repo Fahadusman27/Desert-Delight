@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran - Desert Delight</title>
+    <link rel="stylesheet" href="pembayaran.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Desert Delight</h1>
+            <p>Temukan berbagai produk kue lezat dengan kualitas terbaik</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="checkout-container">
+            <div class="checkout-form">
+                <h2 class="section-title">Data Pengiriman</h2>
+                
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" placeholder="Masukkan nama lengkap" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Masukkan email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Nomor Telepon</label>
+                    <input type="tel" id="phone" placeholder="Masukkan nomor telepon" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Alamat Lengkap</label>
+                    <textarea id="address" rows="3" placeholder="Masukkan alamat lengkap pengiriman" required></textarea>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="province">Provinsi</label>
+                        <select id="province" required>
+                            <option value="">Pilih Provinsi</option>
+                            <option value="DKI Jakarta">DKI Jakarta</option>
+                            <option value="Jawa Barat">Jawa Barat</option>
+                            <option value="Jawa Tengah">Jawa Tengah</option>
+                            <option value="Jawa Timur">Jawa Timur</option>
+                            <option value="Banten">Banten</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">Kota/Kabupaten</label>
+                        <select id="city" required>
+                            <option value="">Pilih Kota/Kabupaten</option>
+                            <option value="Jakarta Selatan">Jakarta Selatan</option>
+                            <option value="Jakarta Pusat">Jakarta Pusat</option>
+                            <option value="Jakarta Barat">Jakarta Barat</option>
+                            <option value="Jakarta Utara">Jakarta Utara</option>
+                            <option value="Jakarta Timur">Jakarta Timur</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="district">Kecamatan</label>
+                        <select id="district" required>
+                            <option value="">Pilih Kecamatan</option>
+                            <option value="Kebayoran Baru">Kebayoran Baru</option>
+                            <option value="Kebayoran Lama">Kebayoran Lama</option>
+                            <option value="Pancoran">Pancoran</option>
+                            <option value="Cilandak">Cilandak</option>
+                            <option value="Pasar Minggu">Pasar Minggu</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="postal-code">Kode Pos</label>
+                        <input type="text" id="postal-code" placeholder="Masukkan kode pos" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="notes">Catatan Pengiriman (Opsional)</label>
+                    <textarea id="notes" rows="2" placeholder="Contoh: Bangunan warna biru, sebelah minimarket"></textarea>
+                </div>
+                
+                <div class="payment-methods">
+                    <h2 class="section-title">Metode Pembayaran</h2>
+                    
+                    <div class="payment-option selected">
+                        <input type="radio" name="payment" id="bank-transfer" checked>
+                        <img src="https://via.placeholder.com/40" alt="Bank Transfer" class="payment-icon">
+                        <div class="payment-details">
+                            <div class="payment-name">Transfer Bank</div>
+                            <div class="payment-desc">Transfer melalui ATM/Internet Banking/Mobile Banking</div>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-option">
+                        <input type="radio" name="payment" id="e-wallet">
+                        <img src="https://via.placeholder.com/40" alt="E-Wallet" class="payment-icon">
+                        <div class="payment-details">
+                            <div class="payment-name">E-Wallet</div>
+                            <div class="payment-desc">OVO, GoPay, Dana, LinkAja, dll</div>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-option">
+                        <input type="radio" name="payment" id="credit-card">
+                        <img src="https://via.placeholder.com/40" alt="Credit Card" class="payment-icon">
+                        <div class="payment-details">
+                            <div class="payment-name">Kartu Kredit/Debit</div>
+                            <div class="payment-desc">Visa, Mastercard, JCB</div>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-option">
+                        <input type="radio" name="payment" id="cod">
+                        <img src="https://via.placeholder.com/40" alt="COD" class="payment-icon">
+                        <div class="payment-details">
+                            <div class="payment-name">Bayar di Tempat (COD)</div>
+                            <div class="payment-desc">Bayar saat pesanan diterima</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="btn">
+                  <a href="/pembayaran/history pembayaran/history.html" id="button" class="button">Bayar Sekarang</a>
+                  <a href="/keranjang/keranjang.html" class="button">Kembali ke Keranjang</a>
+                </div>
+            </div>
+            
+            <div class="order-summary">
+                <h2 class="section-title">Ringkasan Pesanan</h2>
+                
+                <div class="order-items">
+                    <div class="order-item">
+                        <div class="item-name">Victoria Sponge Cake</div>
+                        <div class="item-qty">1x</div>
+                        <div class="item-price">Rp 219.000</div>
+                    </div>
+                    
+                    <div class="order-item">
+                        <div class="item-name">Honey Lemon Chiffon Cake</div>
+                        <div class="item-qty">2x</div>
+                        <div class="item-price">Rp 398.000</div>
+                    </div>
+                </div>
+                
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>Rp 617.000</span>
+                </div>
+                
+                <div class="summary-row">
+                    <span>Diskon</span>
+                    <span>-Rp 80.000</span>
+                </div>
+                
+                <div class="summary-row">
+                    <span>Biaya Pengiriman</span>
+                    <span>Rp 15.000</span>
+                </div>
+                
+                <div class="summary-row">
+                    <span>Biaya Layanan</span>
+                    <span>Rp 2.000</span>
+                </div>
+                
+                <div class="summary-row summary-total">
+                    <span>Total Pembayaran</span>
+                    <span>Rp 554.000</span>
+                </div>
+                
+                <div style="margin-top: 30px;">
+                    <p><strong>Estimasi Pengiriman:</strong> 1-2 hari kerja</p>
+                    <p style="margin-top: 10px;"><strong>Catatan:</strong> Kue akan dikemas dengan box khusus untuk menjaga kesegaran dan keindahan produk.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Kategori</h3>
+                <ul>
+                    <li><a href="#">Sponge Cake</a></li>
+                    <li><a href="#">Butter Cake</a></li>
+                    <li><a href="#">Foam Cake</a></li>
+                    <li><a href="#">Chiffon Cake</a></li>
+                    <li><a href="#">Kue Kering</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Informasi</h3>
+                <ul>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Syarat & Ketentuan</a></li>
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                    <li><a href="#">Cara Pemesanan</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Akun</h3>
+                <ul>
+                    <li><a href="#">Masuk</a></li>
+                    <li><a href="#">Daftar</a></li>
+                    <li><a href="#">Riwayat Pesanan</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Keranjang</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Hubungi Kami</h3>
+                <ul>
+                    <li>Email: info@desertdelight.com</li>
+                    <li>Telp: +62 123 4567 890</li>
+                    <li>Alamat: Jl. Manis No.123, Jakarta</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DesertDelight. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+    <script src="pembayaran.js"></script>    
+</body>
+</html>

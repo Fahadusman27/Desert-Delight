@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="puding.css">
+    <title>Katalog Produk Fashion</title>
+</head>
+<body>
+    <header>
+        <h1>Desert Delight</h1>
+        <p>Temukan berbagai produk fashion pilihan dengan kualitas terbaik dan harga terjangkau.</p>
+    </header>
+    <nav>
+        <a href="#products" class="button">Lihat Menu</a>
+    </nav>
+
+    <div class="container">
+        <div class="filter-container">
+            <div class="filter-controls">
+                <select id="category-filter">
+                    <option value="all">Semua Kategori</option>
+                    <option value="SpongeCake">Sponge Cake</option>
+                    <option value="ButterCake">Butter Cake</option>
+                    <option value="FoamCake">Foam Cake</option>
+                    <option value="ChiffonCake">Chiffon Cake</option>
+                </select>
+                <select id="sort-filter">
+                    <option value="popular">Paling Populer</option>
+                    <option value="low-high">Harga: Rendah ke Tinggi</option>
+                    <option value="high-low">Harga: Tinggi ke Rendah</option>
+                    <option value="newest">Terbaru</option>
+                </select>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Cari produk..." id="search-input">
+                <button>Cari</button>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <div class="product-card" data-category="SpongeCake" data-name="sponge cake" data-price="219000" data-rating="4.5">
+                <div class="product-image">
+                    <img src="This stunning, elegant and delicious fraisier cake….jpg" alt="Soft cake">
+                    <div class="discount-badge">-27%</div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Sponge Cake</div>
+                    <h3 class="product-name">Victoria Sponge</h3>
+                    <div class="product-price">
+                        <div class="current-price">Rp 219.000</div>
+                        <!-- <div class="old-price">Rp 299.000</div> -->
+                    </div>
+                    <div class="product-rating">★★★★☆</div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary">Tambah ke Keranjang</button>
+                        <button class="btn btn-icon">♡</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="FoamCake" data-name="Foam Cake" data-price="219000" data-rating="4.5">
+                <div class="product-image">
+                    <img src="Honey-lemon-chiffon-cake.jpg" alt="Foam Cake">
+                    <div class="discount-badge">-27%</div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Foam Cake</div>
+                    <h3 class="product-name">Foam Cake</h3>
+                    <div class="product-price">
+                        <div class="current-price">Rp 219.000</div>
+                        <!-- <div class="old-price">Rp 299.000</div> -->
+                    </div>
+                    <div class="product-rating">★★★★☆</div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary">Tambah ke Keranjang</button>
+                        <button class="btn btn-icon">♡</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="ButterCake" data-name="Butter Cake" data-price="219000" data-rating="4.5">
+                <div class="product-image">
+                    <img src="Browned Butter Cake with Vanilla-Honey Frosting(1).jpg" alt="Butter Cake">
+                    <div class="discount-badge">-27%</div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Butter Cake</div>
+                    <h3 class="product-name">Browned Butter Cake with</h3>
+                    <h3 class="product-name"> Vanilla-Honey Frosting</h3>
+                    <div class="product-price">
+                        <div class="current-price">Rp 219.000</div>
+                        <!-- <div class="old-price">Rp 299.000</div> -->
+                    </div>
+                    <div class="product-rating">★★★★☆</div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary">Tambah ke Keranjang</button>
+                        <button class="btn btn-icon">♡</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="ChiffonCake" data-name="Chiffon Cake" data-price="219000" data-rating="4.5">
+                <div class="product-image">
+                    <img src="This light and fluffy orange chiffon cake is….jpg" alt="Chiffon Cake">
+                    <div class="discount-badge">-27%</div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Chiffon Cake</div>
+                    <h3 class="product-name">Orange Chiffon Cake</h3>
+                    <div class="product-price">
+                        <div class="current-price">Rp 219.000</div>
+                        <!-- <div class="old-price">Rp 299.000</div> -->
+                    </div>
+                    <div class="product-rating">★★★★☆</div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary">Tambah ke Keranjang</button>
+                        <button class="btn btn-icon">♡</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>></button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kategori</h3>
+                    <ul>
+                        <li><a href="#">Pakaian Pria</a></li>
+                        <li><a href="#">Pakaian Wanita</a></li>
+                        <li><a href="#">Sepatu</a></li>
+                        <li><a href="#">Aksesoris</a></li>
+                        <li><a href="#">Tas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Informasi</h3>
+                    <ul>
+                        <li><a href="#">Tentang Kami</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Cara Pemesanan</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Akun</h3>
+                    <ul>
+                        <li><a href="#">Masuk</a></li>
+                        <li><a href="#">Daftar</a></li>
+                        <li><a href="#">Riwayat Pesanan</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Keranjang</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Hubungi Kami</h3>
+                    <ul>
+                        <li>Email: info@fashionstore.com</li>
+                        <li>Telp: +62 123 4567 890</li>
+                        <li>Alamat: Jl. Fashion No.123, Jakarta</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FashionStore. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="puding.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.produk-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.produk-item a {
+  text-decoration: none;
+  color: #007BFF;
+  font-size: 18px;
+}
+
+.produk-item a:hover {
+  text-decoration: underline;
+}

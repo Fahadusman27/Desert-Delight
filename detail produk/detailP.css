@@ -1,0 +1,99 @@
+        body {
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fdfdfd;
+        color: #333;
+        }
+
+        header {
+            background-image: url('/landingPage/Bahan\ dan\ Cara\ membuat\ Strawberry\ Dessert\ Box….jpg');
+            background-position-y: 28%;
+            color: black;
+            padding: 1.5rem;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+        }
+
+        header h1 {
+            padding-top: 15px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .back-button {
+        display: inline-block;
+        margin-bottom: 1rem;
+        padding: 0.6rem 1.2rem;
+        color: #333;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+        }
+
+        .back-button::before {
+        content: '←';
+        margin-right: 0.5rem;
+        font-size: 2rem;
+        line-height: 1;
+        color: black;
+        }
+
+        .container {
+        max-width: 800px;
+        margin: 2em auto;
+        padding: 1em;
+        background-color: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        }
+
+        .product-detail {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        text-align: center;
+        }
+
+        .product-img {
+        max-width: 100%;
+        border-radius: 8px;
+        }
+
+        .btn {
+        padding: 0.6em 1.2em;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-top: 1em;
+        }
+
+        .btn-primary {
+        background-color: #28a745;
+        color: white;
+        }
+
+        .btn-primary a{
+            color: white;
+        }
+
+        .button {
+        display: inline-block;
+        margin-top: 1em;
+        color: #007bff;
+        text-decoration: none;
+        }
+
+        .button:hover {
+        text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+        .container {
+            margin: 1em;
+            padding: 1em;
+        }
+        }

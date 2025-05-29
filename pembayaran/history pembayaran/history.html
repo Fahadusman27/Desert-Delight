@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat Pembayaran - Desert Delight</title>
+    <link rel="stylesheet" href="history.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="back">
+            <a href="/produk/all/all.html"><i class="fa fa-hand-o-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="container">
+            <h1>Desert Delight</h1>
+            <p>Temukan berbagai produk kue lezat dengan kualitas terbaik</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="history-container">
+            <h1 class="page-title">Riwayat Pembayaran</h1>
+            
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="status-filter">Filter:</label>
+                    <select id="status-filter">
+                        <option value="all">Semua Status</option>
+                        <option value="completed">Selesai</option>
+                        <option value="pending">Menunggu Pembayaran</option>
+                        <option value="failed">Gagal</option>
+                    </select>
+                    
+                    <select id="time-filter">
+                        <option value="all">Semua Waktu</option>
+                        <option value="week">Minggu Ini</option>
+                        <option value="month">Bulan Ini</option>
+                        <option value="year">Tahun Ini</option>
+                    </select>
+                </div>
+                
+                <div class="search-box">
+                    <input type="text" placeholder="Cari ID Transaksi...">
+                    <button>Cari</button>
+                </div>
+            </div>
+            
+            <div class="transaction-list">
+                <!-- Transaksi 1 -->
+                <div class="transaction-item">
+                    <div class="transaction-header">
+                        <div>
+                            <span class="transaction-id">ID: #DD20250001</span>
+                            <span class="transaction-date"> - 25 Mei 2025, 14:30 WIB</span>
+                        </div>
+                        <span class="transaction-status status-completed">Selesai</span>
+                    </div>
+                    
+                    <div class="transaction-details">
+                        <div class="product-image">
+                            <img src="/produk/cake/This stunning, elegant and delicious fraisier cake….jpg" alt="Victoria Sponge Cake">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Victoria Sponge Cake</h3>
+                            <p class="product-variant">Ukuran: Sedang (25cm) • Rasa: Original</p>
+                            <p class="product-qty">Jumlah: 1</p>
+                        </div>
+                    </div>
+                    
+                    <div class="transaction-details">
+                        <div class="product-image">
+                            <img src="/produk/cake/Honey-lemon-chiffon-cake.jpg" alt="Honey Lemon Chiffon Cake">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Honey Lemon Chiffon Cake</h3>
+                            <p class="product-variant">Ukuran: Kecil (20cm) • Hiasan: Buah Segar</p>
+                            <p class="product-qty">Jumlah: 2</p>
+                        </div>
+                    </div>
+                    
+                    <div class="transaction-summary">
+                        <div class="total-price">Total: Rp 554.000</div>
+                        <div class="action-buttons">
+                            <button class="action-btn btn-primary">Lihat Detail</button>
+                            <button class="action-btn btn-outline">Beli Lagi</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Transaksi 2 -->
+                <div class="transaction-item">
+                    <div class="transaction-header">
+                        <div>
+                            <span class="transaction-id">ID: #DD20240098</span>
+                            <span class="transaction-date"> - 20 Mei 2025, 09:15 WIB</span>
+                        </div>
+                        <span class="transaction-status status-completed">Selesai</span>
+                    </div>
+                    
+                    <div class="transaction-details">
+                        <div class="product-image">
+                            <img src="/produk/cake/Browned Butter Cake with Vanilla-Honey Frosting(1).jpg" alt="Browned Butter Cake">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Browned Butter Cake</h3>
+                            <p class="product-variant">Ukuran: Besar (30cm) • Rasa: Vanilla-Honey</p>
+                            <p class="product-qty">Jumlah: 1</p>
+                        </div>
+                    </div>
+                    
+                    <div class="transaction-summary">
+                        <div class="total-price">Total: Rp 329.000</div>
+                        <div class="action-buttons">
+                            <button class="action-btn btn-primary">Lihat Detail</button>
+                            <button class="action-btn btn-outline">Beli Lagi</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Transaksi 3 -->
+                <div class="transaction-item">
+                    <div class="transaction-header">
+                        <div>
+                            <span class="transaction-id">ID: #DD20240097</span>
+                            <span class="transaction-date"> - 15 Mei 2025, 16:45 WIB</span>
+                        </div>
+                        <span class="transaction-status status-pending">Menunggu Pembayaran</span>
+                    </div>
+                    
+                    <div class="transaction-details">
+                        <div class="product-image">
+                            <img src="/produk/cake/This light and fluffy orange chiffon cake is….jpg" alt="Orange Chiffon Cake">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Orange Chiffon Cake</h3>
+                            <p class="product-variant">Ukuran: Sedang (25cm) • Hiasan: Coklat Chip</p>
+                            <p class="product-qty">Jumlah: 1</p>
+                        </div>
+                    </div>
+                    
+                    <div class="transaction-summary">
+                        <div class="total-price">Total: Rp 219.000</div>
+                        <div class="action-buttons">
+                            <button class="action-btn btn-primary">Bayar Sekarang</button>
+                            <button class="action-btn btn-outline">Batalkan</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Transaksi 4 -->
+                <div class="transaction-item">
+                    <div class="transaction-header">
+                        <div>
+                            <span class="transaction-id">ID: #DD20240096</span>
+                            <span class="transaction-date"> - 10 Mei 2025, 11:20 WIB</span>
+                        </div>
+                        <span class="transaction-status status-failed">Gagal</span>
+                    </div>
+                    
+                    <div class="transaction-details">
+                        <div class="product-image">
+                            <img src="/produk/cake/Honey-lemon-chiffon-cake.jpg" alt="Honey Lemon Chiffon Cake">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Honey Lemon Chiffon Cake</h3>
+                            <p class="product-variant">Ukuran: Kecil (20cm) • Hiasan: Kacang Almond</p>
+                            <p class="product-qty">Jumlah: 1</p>
+                        </div>
+                    </div>
+                    
+                    <div class="transaction-summary">
+                        <div class="total-price">Total: Rp 199.000</div>
+                        <div class="action-buttons">
+                            <button class="action-btn btn-primary">Coba Lagi</button>
+                            <button class="action-btn btn-outline">Hapus</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <button>&lt;</button>
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>&gt;</button>
+            </div>
+            
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Kategori</h3>
+                <ul>
+                    <li><a href="#">Sponge Cake</a></li>
+                    <li><a href="#">Butter Cake</a></li>
+                    <li><a href="#">Foam Cake</a></li>
+                    <li><a href="#">Chiffon Cake</a></li>
+                    <li><a href="#">Kue Kering</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Informasi</h3>
+                <ul>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Syarat & Ketentuan</a></li>
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                    <li><a href="#">Cara Pemesanan</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Akun</h3>
+                <ul>
+                    <li><a href="#">Masuk</a></li>
+                    <li><a href="#">Daftar</a></li>
+                    <li><a href="#">Riwayat Pesanan</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Keranjang</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Hubungi Kami</h3>
+                <ul>
+                    <li>Email: info@desertdelight.com</li>
+                    <li>Telp: +62 123 4567 890</li>
+                    <li>Alamat: Jl. Manis No.123, Jakarta</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DesertDelight. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+    <script src="history.js"></script>
+</body>
+</html>

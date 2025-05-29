@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja - Desert Delight</title>
+    <link rel="stylesheet" href="keranjang.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Desert Delight</h1>
+            <p>Temukan berbagai produk kue lezat dengan kualitas terbaik</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <a href="/landingPage/landingpage.html" class="button">Home</a>
+            <a href="/produk/all/all.html" class="button">Lihat Menu</a>
+            <a href="/produk/all/all.html" class="button">Keranjang (2)</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        
+        <div class="cart-items">
+            <!-- Item 1 -->
+            <div class="cart-item">
+                <div class="item-image">
+                    <img src="/produk/cake/This stunning, elegant and delicious fraisier cake….jpg" alt="Victoria Sponge Cake">
+                </div>
+                <div class="item-details">
+                    <h3 class="item-name">Victoria Sponge Cake</h3>
+                    <div class="item-price">Rp 219.000</div>
+                </div>
+                <div class="item-quantity">
+                    <button class="quantity-btn">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1">
+                    <button class="quantity-btn">+</button>
+                </div>
+            </div>
+            
+            <!-- Item 2 -->
+            <div class="cart-item">
+                <div class="item-image">
+                    <img src="/produk/cake/Honey-lemon-chiffon-cake.jpg" alt="Honey Lemon Chiffon Cake">
+                </div>
+                <div class="item-details">
+                    <h3 class="item-name">Honey Lemon Chiffon Cake</h3>
+                    <div class="item-price">Rp 199.000</div>
+                </div>
+                <div class="item-quantity">
+                    <button class="quantity-btn">-</button>
+                    <input type="number" class="quantity-input" value="2" min="1">
+                    <button class="quantity-btn">+</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cart-summary">
+            <h3 class="summary-title">Ringkasan Belanja</h3>
+            <div class="summary-item">
+                <span>Subtotal (2 produk)</span>
+                <span>Rp 418.000</span>
+            </div>
+            <div class="summary-item">
+                <span>Diskon</span>
+                <span>-Rp 80.000</span>
+            </div>
+            <div class="summary-item">
+                <span>Biaya Pengiriman</span>
+                <span>Rp 15.000</span>
+            </div>
+            <div class="summary-item summary-total">
+                <span>Total Pembayaran</span>
+                <span>Rp 353.000</span>
+            </div>
+            
+            <a class="button" id="pembayaran" href="/pembayaran/pembayaran.html">Lanjut ke Pembayaran</a>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Kategori</h3>
+                <ul>
+                    <li><a href="#">Sponge Cake</a></li>
+                    <li><a href="#">Butter Cake</a></li>
+                    <li><a href="#">Foam Cake</a></li>
+                    <li><a href="#">Chiffon Cake</a></li>
+                    <li><a href="#">Kue Kering</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Informasi</h3>
+                <ul>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Syarat & Ketentuan</a></li>
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                    <li><a href="#">Cara Pemesanan</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Akun</h3>
+                <ul>
+                    <li><a href="#">Masuk</a></li>
+                    <li><a href="#">Daftar</a></li>
+                    <li><a href="#">Riwayat Pesanan</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Keranjang</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Hubungi Kami</h3>
+                <ul>
+                    <li>Email: info@desertdelight.com</li>
+                    <li>Telp: +62 123 4567 890</li>
+                    <li>Alamat: Jl. Manis No.123, Jakarta</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DesertDelight. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+    <script src="keranjang.js"></script>    
+</body>
+</html>
