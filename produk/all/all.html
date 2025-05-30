@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delights - Toko Kue Lezat</title>
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Desert Delight</div>
+        <div class="tagline">Rasakan Kenikmatan dalam Setiap Gigitan</div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#cakes">Kue</a></li>
+            <li><a href="#cookies">Kue Kering</a></li>
+            <li><a href="#ice-cream">Es Krim</a></li>
+            <li><a href="#choco-chips">Choco Chips</a></li>
+            <li><a href="#" id="cart-btn">Keranjang (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Manjakan Diri dengan Kelezatan Kami</h1>
+            <p>Temukan berbagai macam kue, kue kering, es krim, dan choco chips yang dibuat dengan bahan-bahan terbaik dan penuh cinta.</p>
+            <a href="#products" class="btn">Lihat Produk</a>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="section-title">
+            <h2>Produk Kami</h2>
+        </div>
+
+        <div class="product-category" id="cakes">
+            <h3>🎂 Kue</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Chocolate Cake">
+                    </div>
+                    <div class="product-info">
+                        <h3>Kue Coklat Klasik</h3>
+                        <p>Kue coklat lembab dengan lapisan ganache coklat yang kaya.</p>
+                        <span class="product-price">Rp 250.000</span>
+                        <button class="add-to-cart" data-name="Kue Coklat Klasik" data-price="250000" data-img="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Vanilla Cake">
+                    </div>
+                    <div class="product-info">
+                        <h3>Kue Vanilla</h3>
+                        <p>Kue vanilla lembut dengan buttercream vanilla yang halus.</p>
+                        <span class="product-price">Rp 220.000</span>
+                        <button class="add-to-cart" data-name="Kue Vanilla" data-price="220000" data-img="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1586788680434-30d324b2d46f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Red Velvet Cake">
+                    </div>
+                    <div class="product-info">
+                        <h3>Red Velvet</h3>
+                        <p>Kue merah lembut dengan cream cheese frosting yang lembut.</p>
+                        <span class="product-price">Rp 280.000</span>
+                        <button class="add-to-cart" data-name="Red Velvet" data-price="280000" data-img="https://images.unsplash.com/photo-1586788680434-30d324b2d46f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cheesecake">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cheesecake</h3>
+                        <p>Cheesecake New York style yang kaya dan lembut.</p>
+                        <span class="product-price">Rp 200.000</span>
+                        <button class="add-to-cart" data-name="Cheesecake" data-price="200000" data-img="https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-category" id="cookies">
+            <h3>🍪 Kue Kering</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Chocolate Chip Cookies">
+                    </div>
+                    <div class="product-info">
+                        <h3>Chocolate Chip</h3>
+                        <p>Kue kering dengan potongan coklat yang melimpah.</p>
+                        <span class="product-price">Rp 35.000/box</span>
+                        <button class="add-to-cart" data-name="Chocolate Chip Cookies" data-price="35000" data-img="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1626224573120-616d61cdc2af?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Oatmeal Raisin Cookies">
+                    </div>
+                    <div class="product-info">
+                        <h3>Oatmeal Raisin</h3>
+                        <p>Kue kering oatmeal dengan kismis yang lembut.</p>
+                        <span class="product-price">Rp 30.000/box</span>
+                        <button class="add-to-cart" data-name="Oatmeal Raisin Cookies" data-price="30000" data-img="https://images.unsplash.com/photo-1626224573120-616d61cdc2af?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1618923850107-d1a234d7a73a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Double Chocolate Cookies">
+                    </div>
+                    <div class="product-info">
+                        <h3>Double Chocolate</h3>
+                        <p>Kue kering coklat dengan chips coklat tambahan.</p>
+                        <span class="product-price">Rp 40.000/box</span>
+                        <button class="add-to-cart" data-name="Double Chocolate Cookies" data-price="40000" data-img="https://images.unsplash.com/photo-1618923850107-d1a234d7a73a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1590080874088-e8e5bd1545fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Peanut Butter Cookies">
+                    </div>
+                    <div class="product-info">
+                        <h3>Peanut Butter</h3>
+                        <p>Kue kering selai kacang yang gurih dan lembut.</p>
+                        <span class="product-price">Rp 35.000/box</span>
+                        <button class="add-to-cart" data-name="Peanut Butter Cookies" data-price="35000" data-img="https://images.unsplash.com/photo-1590080874088-e8e5bd1545fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-category" id="ice-cream">
+            <h3>🍦 Es Krim</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1566566220367-af8d77269124?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Vanilla Ice Cream">
+                    </div>
+                    <div class="product-info">
+                        <h3>Vanilla</h3>
+                        <p>Es krim vanilla klasik yang lembut dan creamy.</p>
+                        <span class="product-price">Rp 25.000/scoop</span>
+                        <button class="add-to-cart" data-name="Es Krim Vanilla" data-price="25000" data-img="https://images.unsplash.com/photo-1566566220367-af8d77269124?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1516043827470-d52a543b658f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Chocolate Ice Cream">
+                    </div>
+                    <div class="product-info">
+                        <h3>Coklat</h3>
+                        <p>Es krim coklat kaya rasa dengan tekstur yang halus.</p>
+                        <span class="product-price">Rp 30.000/scoop</span>
+                        <button class="add-to-cart" data-name="Es Krim Coklat" data-price="30000" data-img="https://images.unsplash.com/photo-1516043827470-d52a543b658f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Strawberry Ice Cream">
+                    </div>
+                    <div class="product-info">
+                        <h3>Strawberry</h3>
+                        <p>Es krim strawberry segar dengan potongan buah asli.</p>
+                        <span class="product-price">Rp 28.000/scoop</span>
+                        <button class="add-to-cart" data-name="Es Krim Strawberry" data-price="28000" data-img="https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Mint Chocolate Chip Ice Cream">
+                    </div>
+                    <div class="product-info">
+                        <h3>Mint Chocolate Chip</h3>
+                        <p>Es krim mint segar dengan chips coklat.</p>
+                        <span class="product-price">Rp 32.000/scoop</span>
+                        <button class="add-to-cart" data-name="Es Krim Mint Chocolate Chip" data-price="32000" data-img="https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-category" id="choco-chips">
+            <h3>🍫 Choco Chips</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Milk Chocolate Chips">
+                    </div>
+                    <div class="product-info">
+                        <h3>Milk Chocolate</h3>
+                        <p>Chips coklat susu yang manis dan creamy.</p>
+                        <span class="product-price">Rp 45.000/pack</span>
+                        <button class="add-to-cart" data-name="Milk Chocolate Chips" data-price="45000" data-img="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dark Chocolate Chips">
+                    </div>
+                    <div class="product-info">
+                        <h3>Dark Chocolate</h3>
+                        <p>Chips coklat hitam dengan rasa yang kuat.</p>
+                        <span class="product-price">Rp 50.000/pack</span>
+                        <button class="add-to-cart" data-name="Dark Chocolate Chips" data-price="50000" data-img="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606312619303-ca8f5caa7c73?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="White Chocolate Chips">
+                    </div>
+                    <div class="product-info">
+                        <h3>White Chocolate</h3>
+                        <p>Chips coklat putih yang lembut dan manis.</p>
+                        <span class="product-price">Rp 40.000/pack</span>
+                        <button class="add-to-cart" data-name="White Chocolate Chips" data-price="40000" data-img="https://images.unsplash.com/photo-1606312619303-ca8f5caa7c73?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606313564147-793f37a6b2c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Semi-Sweet Chocolate Chips">
+                    </div>
+                    <div class="product-info">
+                        <h3>Semi-Sweet</h3>
+                        <p>Chips coklat dengan keseimbangan rasa manis dan pahit.</p>
+                        <span class="product-price">Rp 48.000/pack</span>
+                        <button class="add-to-cart" data-name="Semi-Sweet Chocolate Chips" data-price="48000" data-img="https://images.unsplash.com/photo-1606313564147-793f37a6b2c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo">
+        <h2>Promo Spesial Hari Ini!</h2>
+        <p>Dapatkan diskon 15% untuk pembelian minimal Rp 300.000. Gunakan kode <strong>SWEET15</strong> saat checkout.</p>
+        <a href="#products" class="btn">Beli Sekarang</a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Tentang Kami</h3>
+                <p>Sweet Delights adalah toko kue yang berkomitmen untuk menyajikan produk berkualitas tinggi dengan rasa yang lezat dan penampilan yang menarik.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Kontak</h3>
+                <ul>
+                    <li>📞 +62 812 3456 7890</li>
+                    <li>📧 hello@sweetdelights.com</li>
+                    <li>📍 Jl. Manis No. 123, Jakarta</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Jam Buka</h3>
+                <ul>
+                    <li>Senin-Jumat: 09.00 - 20.00</li>
+                    <li>Sabtu-Minggu: 10.00 - 22.00</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Follow Kami</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2023 Sweet Delights. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Keranjang Belanja -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Keranjang Belanja</h2>
+            <div class="cart-items" id="cart-items">
+                <!-- Item keranjang akan ditambahkan di sini oleh JavaScript -->
+            </div>
+            <div class="cart-total">
+                Total: Rp <span id="cart-total">0</span>
+            </div>
+            <div class="cart-actions">
+                <button class="btn" id="clear-cart">Kosongkan Keranjang</button>
+                <button class="btn" id="checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome untuk ikon -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="all.js"></script>
+</body>
+</html>

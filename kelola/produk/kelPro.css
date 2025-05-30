@@ -1,0 +1,245 @@
+:root {
+    --primary-color: #feca57;
+    --danger-color: #f44336;
+    --text-dark: #2c3e50;
+    --text-light: #777;
+    --bg-light: #f8f9fa;
+    --border-color: #e0e0e0;
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.product-management {
+    flex: 1;
+    padding: 2rem;
+    margin-left: 280px;
+}
+
+/* Tabs Styling */
+.tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.tab {
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: var(--radius);
+    transition: all 0.3s ease;
+    font-weight: 500;
+    background: white;
+    border: 1px solid var(--border-color);
+}
+
+.tab:hover {
+    background: var(--bg-light);
+    transform: translateY(-2px);
+}
+
+.tab.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* Search and Filter */
+.search-filter {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.search-box, .filter-box {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    transition: all 0.3s ease;
+}
+
+.search-box {
+    flex: 2;
+}
+
+.filter-box {
+    flex: 1;
+}
+
+.search-box:focus, .filter-box:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 1.5rem 0;
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+}
+
+th, td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background: var(--bg-light);
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+tr:hover {
+    background: var(--bg-light);
+}
+
+/* Status Badges */
+.status {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.status-available {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.status-out {
+    background: #ffebee;
+    color: #c62828;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-add {
+    background: var(--primary-color);
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.btn-edit {
+    background: #2196F3;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.btn-delete {
+    background: var(--danger-color);
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.page-item {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.page-item:hover {
+    background: var(--bg-light);
+    border-color: var(--primary-color);
+}
+
+.page-item.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .product-management {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .search-filter {
+        flex-direction: column;
+    }
+
+    .search-box, .filter-box {
+        width: 100%;
+    }
+
+    .tabs {
+        overflow-x: auto;
+        padding-bottom: 1rem;
+    }
+
+    .tab {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
