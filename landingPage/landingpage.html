@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="/landingPage/landing.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -17,18 +17,25 @@
         <a href="#products" class="button">Lihat Menu</a>
     </header>
     <nav>
-        <div class="menu-tengah">
+    <div class="nav-container">
+        <button class="hamburger">
+            <span class="menu-icon">☰</span>
+        </button>
+        <div class="nav-menu">
             <a href="#about">About</a>
             <a href="#catalog">Catalog</a>
             <a href="#comments">Testimonial</a>
             <a href="/arsip artikel/arsip.html">Artikel</a>
         </div>
-        <a class="keranjang" href="/keranjang/keranjang.html"><i class="bi bi-cart-plus"></i></a>
+        <a class="keranjang" href="/keranjang/keranjang.html">
+            <i class="bi bi-cart-plus"></i>
+        </a>
+    </div>
     </nav>
     <section id="about" class="about">
         <h2>About Us</h2>
         <div class="about-content">
-        <p>About Us – Desert Delight
+        <p>Desert Delight
 
             Selamat datang di Desert Delight, destinasi terbaik untuk memuaskan hasrat manis Anda! Kami adalah toko kue dan hidangan penutup yang menyajikan beragam kreasi lezat, mulai dari kue-kue lembut, es krim creamy, cookies renyah, hingga puding yang menyegarkan.  
             
@@ -40,7 +47,7 @@
             
             💖 Desert Delight – Where Every Bite Brings Joy! 💖</p>
         <div class="about-image">
-            <img src="v2.jpg" alt="Desert Delight">
+            <img src="/landingPage/v2.jpg" alt="Desert Delight">
         </div>
         </div>
     </section>
@@ -95,18 +102,18 @@
         </div>
         <div class="komen">
             <div class="komen-card">
-                <img src="Untitled.jpg" alt="Cake">
+                <img src="/landingPage/Untitled.jpg" alt="Cake">
                 <h3>Rina Nose</h3>
                 <p>"Aromanya saja sudah bikin tergoda, apalagi rasanya.
                      Cookies-nya lembut dengan potongan coklat yang melimpah. Cocok banget untuk teman ngopi atau camilan sore hari!"</p>
             </div>
             <div class="komen-card">
-                <img src="Untitled copy.jpg" alt="Cake">
+                <img src="/landingPage/Untitled copy.jpg" alt="Cake">
                 <h3>Sinta</h3>
                 <p>"Chocolate Cake-nya lembut banget! Cokelatnya terasa rich dan lumer di mulut. Pasti bakal order lagi!"</p>
             </div>
             <div class="komen-card">
-                <img src="parto.jpg" alt="Cake">
+                <img src="/landingPage/parto.jpg" alt="Cake">
                 <h3>Parto</h3>
                 <p>"Vanilla ice cream-nya benar-benar lezat! Teksturnya lembut dan creamy, dengan rasa vanila yang alami dan tidak terlalu manis. Sangat memuaskan!"</p>
             </div>
@@ -115,6 +122,6 @@
     <footer>
         <p>&copy; 2023 Desert Delight. All rights reserved.</p>
     </footer>
-    <script src="landing.js"></script>
+    <script src="/landingPage/landing.js"></script>
 </body>
 </html>
