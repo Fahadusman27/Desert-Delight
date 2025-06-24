@@ -465,97 +465,57 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .hamburger {
-        display: block;
-        z-index: 100;
+    .nav-container {
+        flex-direction: row;
+        padding: 8px 5px;
     }
-
     .nav-menu {
         display: none;
+        flex-direction: column;
         position: absolute;
         top: 100%;
         left: 0;
-        width: 100%;
+        width: 100vw;
         background: #2e2e2e;
-        flex-direction: column;
-        padding: 0;
+        z-index: 99;
+        gap: 0;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
-
     .nav-menu.active {
         display: flex;
     }
-
     .nav-menu a {
-        width: 100%;
-        text-align: center; /* Center text in mobile view */
-        padding: 15px 20px;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+        padding: 16px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+        font-size: 1.1rem;
     }
-
-    nav {
-        padding: 10px;
-        position: relative;
-    }
-
-    .menu-tengah {
-        display: none; /* Hidden by default */
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #2e2e2e;
-        flex-direction: column;
-        width: 100%;
-        z-index: 999;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .menu-tengah.active {
-        display: flex !important; /* Force display when active */
-    }
-
-    .menu-tengah a {
-        display: block;
-        padding: 15px 20px;
-        color: white;
-        text-decoration: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        transition: all 0.3s ease;
-    }
-
-    .menu-tengah a:last-child {
+    .nav-menu a:last-child {
         border-bottom: none;
     }
-
-    .menu-tengah a:hover {
-        background-color: #e6b64f;
-        padding-left: 25px;
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: white;
+        margin-right: 10px;
     }
-
     .keranjang {
         position: static;
-        transform: none;
         margin-left: auto;
+        font-size: 1.5rem;
     }
+}
 
-    nav .keranjang {
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
+/* Untuk mobile lebih kecil */
+@media screen and (max-width: 480px) {
+    .nav-menu a {
+        font-size: 1rem;
+        padding: 14px 0;
     }
-
-    /* Hamburger animation */
-    .hamburger.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-
-    .hamburger.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
+    .nav-container {
+        padding: 5px 2px;
     }
 }
 

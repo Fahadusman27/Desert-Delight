@@ -1,4 +1,4 @@
-        document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
             const modal = document.getElementById('article-modal');
             const btnAdd = document.getElementById('tambah-artikel');
             const closeModal = document.querySelectorAll('.close-modal');
@@ -29,4 +29,24 @@
                 alert('Artikel berhasil disimpan!');
                 modal.style.display = 'none';
             });
+            
+            // Sidebar hamburger toggle
+            const sidebar = document.querySelector('.sidebar');
+            const sidebarHamburger = document.querySelector('.sidebar-hamburger');
+            if (sidebar && sidebarHamburger) {
+                sidebarHamburger.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    sidebar.classList.toggle('active');
+                });
+                document.addEventListener('click', function(e) {
+                    if (!sidebar.contains(e.target) && e.target !== sidebarHamburger) {
+                        sidebar.classList.remove('active');
+                    }
+                });
+                sidebar.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        sidebar.classList.remove('active');
+                    });
+                });
+            }
         });

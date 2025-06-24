@@ -1,4 +1,4 @@
-        document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
             const cart = [];
             const cartBtn = document.getElementById('cart-btn');
             const cartModal = document.getElementById('cart-modal');
@@ -158,5 +158,24 @@
                         document.body.removeChild(message);
                     }, 500);
                 }, 2000);
+            }
+
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            if (hamburger && navMenu) {
+                hamburger.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    navMenu.classList.toggle('active');
+                });
+                document.addEventListener('click', function(e) {
+                    if (!navMenu.contains(e.target) && e.target !== hamburger) {
+                        navMenu.classList.remove('active');
+                    }
+                });
+                navMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navMenu.classList.remove('active');
+                    });
+                });
             }
         });

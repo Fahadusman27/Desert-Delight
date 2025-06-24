@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="regis.css">
     <title>Dessert Deluh - Register</title>
+    <link rel="stylesheet" href="regis.css">
 </head>
 <body>
     <div class="register-container">
@@ -126,6 +126,23 @@
             } else {
                 strengthBar.style.backgroundColor = '#2ed573';
             }
+        });
+        
+        // Form submission handler
+        document.querySelector('.register-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return;
+            }
+            
+            // Here you would normally send the form data to your server
+            alert("Account created successfully! Redirecting to login...");
+            // window.location.href = '/login.html';
         });
     </script>
 </body>

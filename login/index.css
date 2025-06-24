@@ -1,4 +1,4 @@
-        * {
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -168,3 +168,49 @@
             background-color: #ff6b81;
             color: white;
         }
+
+        /* Responsive Styles */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 25px 15px;
+        max-width: 90%;
+    }
+    .logo h1 {
+        font-size: 22px;
+    }
+    .login-form .input-group input {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+    .login-button {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    .login-container {
+        padding: 18px 8px;
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    .logo h1 {
+        font-size: 18px;
+    }
+    .logo p {
+        font-size: 12px;
+    }
+    .register-link {
+        font-size: 12px;
+    }
+    .divider {
+        font-size: 10px;
+    }
+    .social-icon {
+        width: 32px;
+        height: 32px;
+    }
+}

@@ -11,25 +11,26 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-image: url('/landingPage/Bahan dan Cara membuat Strawberry Dessert Box….jpg');
+            background-image: linear-gradient(rgba(255, 245, 245, 0.9), rgba(255, 245, 245, 0.9)), url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1089&q=80');
             background-size: cover;
             background-position: center;
-            background-blend-mode: overlay;
+            padding: 20px;
         }
 
         .register-container {
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 30px;
             border-radius: 15px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
             width: 100%;
             max-width: 450px;
             backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
         }
 
         .logo {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
         .logo h1 {
@@ -108,6 +109,7 @@
         .terms input {
             margin-right: 10px;
             margin-top: 3px;
+            min-width: 16px;
         }
 
         .terms a {
@@ -189,4 +191,90 @@
         .social-icon:hover {
             background-color: #ff6b81;
             color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .register-container {
+                padding: 25px;
+                max-width: 90%;
+            }
+            
+            .name-fields {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .logo h1 {
+                font-size: 24px;
+            }
+            
+            .register-button {
+                font-size: 15px;
+            }
+            
+            .terms {
+                font-size: 12px;
+            }
+            
+            .social-icon {
+                width: 36px;
+                height: 36px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .register-container {
+                padding: 20px;
+                max-width: 100%;
+            }
+            
+            .logo h1 {
+                font-size: 22px;
+            }
+            
+            .logo p {
+                font-size: 13px;
+            }
+            
+            .register-form .input-group input, 
+            .register-form .input-group select {
+                padding: 10px 12px;
+                font-size: 13px;
+            }
+            
+            .terms {
+                font-size: 11px;
+            }
+            
+            .register-button {
+                padding: 10px;
+                font-size: 14px;
+            }
+            
+            .social-register {
+                gap: 10px;
+            }
+            
+            .social-icon {
+                width: 34px;
+                height: 34px;
+            }
+            
+            .social-icon svg {
+                width: 14px;
+                height: 14px;
+            }
+            
+            .divider {
+                margin: 15px 0;
+            }
+            
+            .login-link {
+                font-size: 13px;
+            }
         }

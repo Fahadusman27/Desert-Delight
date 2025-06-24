@@ -204,42 +204,109 @@ tr:hover {
     border-color: var(--primary-color);
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .product-management {
-        margin-left: 0;
-        padding: 1rem;
-    }
+/* Sidebar Styling */
+.sidebar-hamburger {
+    display: none;
+    position: fixed;
+    top: 18px;
+    left: 18px;
+    z-index: 1201;
+    background: var(--primary-color, #feca57);
+    color: #2d3436;
+    border: none;
+    border-radius: 8px;
+    font-size: 2rem;
+    padding: 6px 14px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
 
-    .search-filter {
-        flex-direction: column;
-    }
-
-    .search-box, .filter-box {
-        width: 100%;
-    }
-
-    .tabs {
-        overflow-x: auto;
-        padding-bottom: 1rem;
-    }
-
-    .tab {
-        white-space: nowrap;
-    }
+.sidebar-menu-icon {
+    font-size: 2rem;
 }
 
 @media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        left: -260px;
+        top: 0;
+        width: 220px;
+        min-width: 180px;
+        max-width: 80vw;
+        height: 100vh;
+        z-index: 1200;
+        background: #22223b;
+        transition: left 0.3s;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.08);
+        padding: 18px 8px;
+        overflow-y: auto;
+    }
+    .sidebar.active {
+        left: 0;
+    }
+    .product-management {
+        margin-left: 0;
+        padding: 12px;
+    }
+    .sidebar-hamburger {
+        display: block !important;
+    }
+    /* Tambahan agar tabel bisa di-scroll */
+    .tab-content {
+        overflow-x: auto;
+    }
     table {
+        min-width: 600px;
+        width: 100%;
         display: block;
         overflow-x: auto;
     }
+}
 
-    .action-buttons {
+@media (max-width: 480px) {
+    .sidebar {
+        width: 80vw;
+        min-width: 0;
+        padding: 12px 4px;
+    }
+    .sidebar-hamburger {
+        top: 10px;
+        left: 10px;
+        font-size: 1.7rem;
+        padding: 4px 10px;
+        display: block !important;
+    }
+    .product-management {
+        padding: 8px 2px;
+    }
+    .tabs {
+        gap: 4px;
+        flex-wrap: wrap;
+    }
+    .tab {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.95rem;
+    }
+    .search-filter {
+        gap: 6px;
         flex-direction: column;
     }
-
-    .btn {
+    .btn, .btn-add, .btn-edit, .btn-delete {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.95rem;
+    }
+    th, td {
+        padding: 0.6rem 0.7rem;
+        font-size: 0.95rem;
+    }
+    /* Tambahan agar tabel bisa di-scroll */
+    .tab-content {
+        overflow-x: auto;
+    }
+    table {
+        min-width: 500px;
         width: 100%;
+        display: block;
+        overflow-x: auto;
     }
 }
